@@ -9,7 +9,7 @@ public interface IVideoService {
     List<Video> exibirVideos();
     Video exibirVideosById(Long id);
     Video criarVideo(Video video);
-    Video atualizarVideo(Video video);
+    Video atualizarVideo(Long id, Video video);
     void deletarVideo(Long id);
 
 }

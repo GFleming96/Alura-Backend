@@ -8,7 +8,7 @@ public interface IVideoController {
     ResponseEntity exibirVideos();
     ResponseEntity exibirVideosById(Long id);
     ResponseEntity criarVideo(Video video);
-    ResponseEntity atualizarVideo(Video video);
+    ResponseEntity atualizarVideo(Long id,Video video);
     ResponseEntity deletarVideo(Long id);
 
 }

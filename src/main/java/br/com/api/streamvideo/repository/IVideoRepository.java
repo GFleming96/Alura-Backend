@@ -1,15 +1,11 @@
 package br.com.api.streamvideo.repository;
 
 import br.com.api.streamvideo.entity.Video;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface IVideoRepository {
+public interface IVideoRepository extends JpaRepository<Video,Long> {
 
-    List<Video> exibirVideos();
-    Video exibirVideosById(Long id);
-    Video criarVideo(Video video);
-    Video atualizarVideo(Video video);
-    void deletarVideo(Long id);
 
 }
